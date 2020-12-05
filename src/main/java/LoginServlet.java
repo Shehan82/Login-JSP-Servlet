@@ -17,6 +17,14 @@ public class LoginServlet extends HttpServlet {
         LoginDAO user = new LoginDAO();
         try {
             int userType = user.getUserType(credentials);
+            if(userType == 1)
+            {
+                res.sendRedirect("admin.html");
+            }
+            else
+            {
+                res.sendRedirect("students.html");
+            }
             res.getWriter().println(userType);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
