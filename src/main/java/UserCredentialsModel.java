@@ -1,8 +1,8 @@
-public class LoginModel {
+public class UserCredentialsModel {
     private String userName;
     private String password;
 
-    public LoginModel(String userName, String password) {
+    public UserCredentialsModel(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }
