@@ -1,7 +1,7 @@
 import java.sql.*;
 
 public class LoginDAO {
-    public int userType(UserCredentialsModel user) throws ClassNotFoundException, SQLException {
+    public int getUserType(UserCredentialsModel user) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/school", "root","");
 
